@@ -1,0 +1,16 @@
+.container-fluid {
+    background-color: rgb(226, 226, 226);
+}
+
+.pt-custom {
+    padding-top: 200px;
+  }
+
+.justify-content-center {
+    margin-top: 10px;
+}
+
+.navbar {
+    margin-left: 0;
+    margin-right: 0;
+}
