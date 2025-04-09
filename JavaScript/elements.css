@@ -1,0 +1,96 @@
+div.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.menu_item {
+    border: 2px solid black;
+    border-radius: 20% / 60%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px;
+}
+
+div#menu_html {
+    /* person A should choose a new color and push to github;
+       later, person D should choose a different color and
+       push to github */
+    background-color: palevioletred;
+}
+
+div#menu_css {
+    /* person B should choose a new color and push to github;
+       later, person A should choose a different color and
+       push to github */
+    background-color: lavender;
+}
+
+div#menu_js {
+    /* person C should choose a new color and push to github;
+       later, person B should choose a different color and
+       push to github */
+    background-color: salmon;
+}
+
+div#menu_git {
+    /* person D should choose a new color and push to github;
+       later, person C should choose a different color and
+       push to github */
+    background-color: rgb(183, 250, 211);
+}
+
+#menu_git:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(180, 252, 150);
+}
+
+#menu_css:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(175, 175, 254);
+}
+
+#menu_html:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: papayawhip;
+}
+
+div.info_box {
+    /* feel free to change this however you and/or teammates want */
+    border: 2px solid black;
+    border-radius: 25% 25%;
+    background-color: lightblue;
+    padding: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+#info_git {
+    background-color: #fff7d6;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 2s ease-out;
+}
+
+/* info_git {
+    transition: transform 2s ease-in-out;
+} */
+
+/* you may want to add more individualized CSS per the info box you're
+responsible for... */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Course Elements</title>
+
+        <link rel="stylesheet" href="elements.css" />
+    </head>
+
+    <body>
+
+        <div class="menu">
+            <div class="menu_item" id="menu_html">HTML</div>
+            <div class="menu_item" id="menu_css">CSS</div>
+            <div class="menu_item" id="menu_js">JavaScript</div>
+            <div class="menu_item" id="menu_git">git/GitHub</div>
+            <div class="menu_item" id="menu_zzz">zzz</div>
+        </div>
+
+        <!-- you'll want >=1 info_box per topic -->
+        <div class="info_box" id="info_zzz"
+             style="visibility: hidden">
+             Most important info about ZZZ...
+             <div>(click shape to close)</div>
+        </div>
+
+        <div class="info_box" id="info_git"
+             style="visibility: hidden">
+             <b>git/GitHub</b> allows users to create and collaborate
+             on files or code from across the world. Edits and 
+             changes can be made from multiple users to the
+             same files 
+             <br>
+             <h4><a href="https://blawson.bates-catapult.net/github_tutorial">Some Helpful git Commands:</a><br></h4>
+                git branch {branch_name} <br>
+                git checkout {branch_name} <br>
+                git status <br>
+                git add {filename} <br>
+                git commit -a -m "{message}" <br>
+                git pull origin main <br>
+                git push origin main <br>
+                <div>(Click Shape to Close)</div>
+             </div>
+             
+        </div>
+
+        <div class="info_box" id="info_css"
+             style="visibility: hidden">
+                CSS is a style sheet language used for describing the look and formatting of a document written in a markup language. 
+             <div>
+                <br>
+                <h4>Some Helpful CSS Commands: <br></h4>
+                color: red; <br>
+                font-size: 20px; <br>
+                font-family: Arial; <br>
+                text-align: center; <br>
+                background-color: yellow; <br>
+                border: 1px solid black; <br>
+                padding: 10px; <br>
+                margin: 10px; <br>
+             </div>
+             <div>(click shape to close)</div>
+        </div>
+
+        <div class="info_box" id="info_html"
+             style="visibility: hidden">
+                HTML the standard markup language for documents designed to be displayed in a web browser. 
+             <div>
+                <br>
+                <h4>Some Helpful HTML Commands: <br></h4>
+                color: red; <br>
+                font-size: 20px; <br>
+                font-family: Arial; <br>
+                text-align: center; <br>
+                background-color: yellow; <br>
+                border: 1px solid black; <br>
+                padding: 10px; <br>
+                margin: 10px; <br>
+             </div>
+             <div>(click shape to close)</div>
+        </div>
+        
+   </div>
+
+        <script src="elements.js"></script>
+
+    </body>
+
+</html>
