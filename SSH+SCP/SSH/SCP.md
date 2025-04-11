@@ -1,48 +1,60 @@
-# How to Create SSH Keys and Use SCP to Transfer Files Remotely
+### How to Create SSH Keys and Use SCP to Transfer Files Remotely
 
-# CREATING SSH KEY
+## CREATING SSH KEY
 
-Step 1.
-Open Terminal on System (Windows/Linux)
+# Step 1.
 
-Step 2.
-Generate SSH Key -- When Prompted with Passcode, enter no passphrase
-Command: ssh-keygen
+**Open Terminal on System (Windows/Linux)**
 
-# USING PUBLIC KEY FOR REMOTE LOGIN
+# Step 2.
 
-Step 1.
-Change Directory to .ssh from Home Directory
-Command: cd .ssh
+**Generate SSH Key -- When Prompted with Passcode, enter no passphrase**
 
-Step 2.
-Use SCP to transfer a copy of public key
+    ssh-keygen
 
-    -- scp id_rsa.pub ExamplePerson@remote_ip_address:
+## USING PUBLIC KEY FOR REMOTE LOGIN
 
-DO NOT FORGET THE COLON FOR SCP , Enter Password for SCP to Login to Remote Machine
+# Step 1.
 
-Step 3.
-Use SSH to login to remote machine
+**Change Directory to .ssh from Home Directory**
 
-- ssh ExamplePerson@remote_ip_address
+    cd .ssh
 
-Step 4.
-Once in Remote Machine, Change Directory into SSH
-IF .ssh exists:
+# Step 2.
 
-- cd .ssh
-  Else:
+**Use SCP to transfer a copy of public key**
 
-- mkdir .ssh
-- cd .ssh
+    scp id_rsa.pub ExamplePerson@remote_ip_address:
 
-Step 5.
-Append public key into authorized_keys
+_DO NOT FORGET THE COLON FOR SCP_
+_Enter Password for SCP to Login to Remote Machine_
 
-- cat ~/id_rsa.pub >> authorized_keys
+# Step 3.
 
-Step 6.
-Login Without Password ( Now that SSH Key is authorized you can login without a password)
+**Use SSH to login to remote machine**
 
-- ssh ExamplePerson@remote_ip_address
+    ssh ExamplePerson@remote_ip_address
+
+# Step 4.
+
+**Once in Remote Machine, Change Directory into SSH**
+_IF .ssh exists:_
+
+    cd .ssh
+
+_Else:_
+
+    mkdir .ssh
+    cd .ssh
+
+# Step 5.
+
+**Append public key into authorized_keys**
+
+    cat ~/id_rsa.pub >> authorized_keys
+
+# Step 6.
+
+**Login Without Password ( Now that SSH Key is authorized you can login without a password)**
+
+    ssh ExamplePerson@remote_ip_address
