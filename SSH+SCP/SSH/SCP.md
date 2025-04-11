@@ -18,8 +18,8 @@ Command: cd .ssh
 Step 2.
 Use SCP to transfer a copy of public key
 
-- scp id_rsa.pub ExamplePerson@remote_ip_address:
-  DO NOT FORGET THE COLON FOR SCP , Enter Password for SCP to Login to Remote Machine
+-- scp id_rsa.pub ExamplePerson@remote_ip_address:
+DO NOT FORGET THE COLON FOR SCP , Enter Password for SCP to Login to Remote Machine
 
 Step 3.
 Use SSH to login to remote machine
