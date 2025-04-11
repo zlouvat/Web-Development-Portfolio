@@ -37,7 +37,7 @@ _Enter Password for SCP to Login to Remote Machine_
 
 ### Step 4.
 
-**Once in Remote Machine, Change Directory into SSH**
+**Once in Remote Machine, Change Directory into SSH**<br>
 _IF .ssh exists:_
 
     cd .ssh
@@ -58,3 +58,30 @@ _Else:_
 **Login Without Password ( Now that SSH Key is authorized you can login without a password)**
 
     ssh ExamplePerson@remote_ip_address
+
+## DEPLOYING FILES REMOTELY
+
+### Step 1.
+
+**Create a Tar File(File Packaging)**
+
+    cd exampleDir
+    tar czvf example_files.tgz *
+
+### Step 2.
+
+**Transfer .tgz to your remote login(Using Catapult as Example)**
+
+    scp example_files.tgz zlouvatb@catapult.bates.edu:
+
+### Step 3.
+
+**Organizing Files Remotely - Imagine this is a website we're building**
+
+    ssh zlouvatb@catapult.bates.edu
+    mkdir public_html
+    mv ~/example_files.tgz .
+    tar xzvf example_files.tgz
+    rm example_files.tgz
+
+_Do not forget to remove the packaged file after use_
