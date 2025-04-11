@@ -2,58 +2,46 @@
 
 # CREATING SSH KEY
 
-**Step 1.**
-Open Terminal on your local system (Windows/Linux).
-
-**Step 2.**
-Generate an SSH key pair. When prompted for a passphrase, you can choose to enter one for added security or leave it blank for passwordless login.
-
-```bash
-ssh-keygen
-USING PUBLIC KEY FOR REMOTE LOGIN
 Step 1.
-Navigate to the .ssh directory in your home directory on your local machine.
+Open Terminal on System (Windows/Linux)
 
-Bash
-
-cd ~/.ssh
 Step 2.
-Use scp to securely copy your public key (id_rsa.pub) to the remote server. Do not forget the colon : at the end of the remote path. You will be prompted for the remote user's password during this step.
+Generate SSH Key -- When Prompted with Passcode, enter no passphrase
+Command: ssh-keygen
 
-Bash
+# USING PUBLIC KEY FOR REMOTE LOGIN
 
-scp id_rsa.pub ExamplePerson@remote_ip_address:
-Enter the password for ExamplePerson on the remote machine when prompted.
+Step 1.
+Change Directory to .ssh from Home Directory
+Command: cd .ssh
+
+Step 2.
+Use SCP to transfer a copy of public key
+
+- scp id_rsa.pub ExamplePerson@remote_ip_address:
+  DO NOT FORGET THE COLON FOR SCP , Enter Password for SCP to Login to Remote Machine
 
 Step 3.
-Log in to the remote machine using ssh.
+Use SSH to login to remote machine
 
-Bash
+- ssh ExamplePerson@remote_ip_address
 
-ssh ExamplePerson@remote_ip_address
 Step 4.
-Once you are logged into the remote machine, navigate to the .ssh directory. If it doesn't exist, create it.
+Once in Remote Machine, Change Directory into SSH
+IF .ssh exists:
 
-Bash
+- cd .ssh
+  Else:
 
-# If the .ssh directory exists:
-cd ~/.ssh
+- mkdir .ssh
+- cd .ssh
 
-# Else, create the directory and then navigate into it:
-mkdir ~/.ssh
-cd ~/.ssh
 Step 5.
-Append the content of the uploaded public key (id_rsa.pub) to the authorized_keys file. This authorizes your public key for passwordless login in the future.
+Append public key into authorized_keys
 
-Bash
+- cat ~/id_rsa.pub >> authorized_keys
 
-cat ~/id_rsa.pub >> authorized_keys
 Step 6.
-Now that your SSH key is authorized on the remote machine, you should be able to log in without a password.
+Login Without Password ( Now that SSH Key is authorized you can login without a password)
 
-Bash
-
-ssh ExamplePerson@remote_ip_address
-
-
-```
+- ssh ExamplePerson@remote_ip_address
