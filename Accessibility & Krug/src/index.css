@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Bates color variables */
+    --colorGarnet: hsl(350, 78%, 30%);
+    --colorGarnet-bright: hsl(351, 80%, 34%);
+    --colorGarnet-dark: hsl(349, 98%, 18%);
+    --colorGarnet-dark2: hsl(350, 97%, 12%);
+    --colorGray: hsl(0, 0%, 44%);
+    --colorGray-light: hsl(0, 0%, 94%);
+    --colorBlue: hsl(198, 86%, 27%);
+    --colorBlue-bright: hsl(195, 61%, 46%);
+    --colorBlue-dark: hsl(198, 94%, 14%);
+    --colorBlue-light: hsl(192, 95%, 80%);
+    --colorGreen: hsl(57, 66%, 22%);
+    --colorGreen-bright: hsl(55, 60%, 44%);
+    --colorLink: hsl(198, 86%, 34%);
+    --colorLink-light: hsl(192, 95%, 80%);
+    
+    /* Font variables */
+    --fontSerif: "Sabon Next W01", Georgia, serif;
+    --fontSansSerif: "Neue Frutiger W01", Arial, sans-serif;
+    
+    /* Background and foreground colors */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 min-h-screen flex flex-col;
+    font-family: var(--fontSansSerif);
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin: 1.2em 0 0.2em 0;
+    line-height: 1.1em;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-family: var(--fontSerif);
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: var(--fontSerif);
+    font-size: 1.65em;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: var(--fontSerif);
+    font-size: 1.5em;
+    font-weight: 400;
+    color: hsl(0, 0%, 27%);
+  }
+
+  h4 {
+    font-family: var(--fontSerif);
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #222;
+  }
+
+  h5 {
+    font-family: var(--fontSansSerif);
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 0.2em;
+    margin-top: 1.4em;
+    line-height: 1.3em;
+  }
+  
+  a {
+    color: var(--colorLink);
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration-color: var(--colorGreen-bright);
+  }
+
+  button.bates-button {
+    border-radius: 3px;
+    border: 0;
+    padding: 0.7em;
+    margin: 5px 0;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--colorGarnet-bright);
+    color: var(--colorGray-light);
+  }
+
+  button.bates-button:hover {
+    color: hsla(0, 0%, 94%, 0.15);
+    border: 0;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.4) inset;
+  }
+  
+  button.bates-button:active {
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.7) inset;
+  }
+
+  footer {
+    @apply relative z-20;
+  }
+} 
+
+/* Media queries for responsive typography */
+@media (min-width: 550px) {
+  body {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 800px) {
+  h2 {
+    font-size: 1.85em;
+  }
+  body {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.9em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  h4 {
+    font-size: 1.47em;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
+  body {
+    font-size: 1.4em;
+  }
+} 
