@@ -1,5 +1,3 @@
-# How to Create SSH Keys and Use SCP to Transfer Files Remotely
-
 ## HTML
 
 HTML (HyperText Markup Language) is the structure of any website, responsible for defining its content and outline. It uses a tags to describe elements such as headings, paragraphs, images, links, and images. By providing an ordered structure, HTML ensures that content is accessible and organized, enabling browsers to interpret and display it properly. For example, the HTML <h1> tag makes a primary heading, while <p> is a paragraph. Without HTML, a website would being significantly less coherent to browsers.

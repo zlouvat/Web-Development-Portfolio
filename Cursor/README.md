@@ -1,46 +1,20 @@
-# React + Vite + TailwindCSS v4 + ShadCN/ui
+# Cursor
 
-This project is a modern web application setup using:
+## Intro
 
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [TailwindCSS v4](https://tailwindcss.com/)
-- [ShadCN/ui](https://ui.shadcn.com/)
+**Using Cursor with LLM to Create Easy GameCenter with Chess and TicTacToe**
 
-## Getting Started
+### Cursor (Claude3.7 Sonnet)
 
-### Installation
+**LLM**
 
-```bash
-# Install dependencies
-npm install
-```
+    Cursor makes use of Claude3.7 Sonnet to generate code
+    for the user that makes coding a website take seconds.
+    This website makes use of ShadCN/Tailwind4.0/React+Vite
+    to make a simple website showcasing Chess and TicTacToe
 
-### Development
+**Components**
 
-```bash
-# Start the development server
-npm run dev
-```
-
-### Build
-
-```bash
-# Build for production
-npm run build
-```
-
-## Features
-
-- Modern React with TypeScript
-- Fast development with Vite
-- Utility-first CSS with Tailwind CSS v4
-- Beautiful, accessible UI components with ShadCN/ui
-- Path aliases for cleaner imports
-- Component reusability and customization
-
-## Project Structure
-
-- `src/components/ui`: ShadCN/ui components
-- `src/lib`: Utility functions
-- `public`: Static assets
+    The components in this Project are the Chess module and
+    TicTacToe module that both hold the respective code for the
+    AI to play against along with the gameboard creation.

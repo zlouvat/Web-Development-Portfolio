@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+## React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React is a JavaScript library for building user interfaces, while Vite is a development tool that provides a fast and efficient way to build and serve web applications.
+React:
 
-Currently, two official plugins are available:
+- A library for building reusable UI components
+- Ideal for creating complex, data-driven user interfaces
+- Uses a virtual DOM to optimize rendering performance
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Vite:
 
-## Expanding the ESLint configuration
+- A development server and build tool
+- Provides fast hot reloading, optimized builds, and a smooth development experience
+- Supports modern web development features like ES modules and CSS modules
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Together, React + Vite offer a powerful combination for building fast, scalable, and maintainable web applications. Vite's speed and efficiency complement React's component-based architecture, making it a popular choice for modern web development.
 
-- Configure the top-level `parserOptions` property like this:
+# Context
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    This Assignment holds the informational page about all
+    things web development. This was entirely built using React
+    +Vite along with React-Bootstrap Components. The components
+    used are Navbar, LandingPageContent, PageBorder, and
+    InfoCard to properly display content on the page

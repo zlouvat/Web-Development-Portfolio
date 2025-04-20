@@ -1,54 +1,15 @@
-# React + TypeScript + Vite
+## ShadCN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShadCN is a UI component library for React applications. It provides a set of pre-built, customizable, and accessible UI components that can be used to build fast and visually appealing user interfaces.
+ShadCN components are designed to be:
 
-Currently, two official plugins are available:
+- Accessible: Following best practices for accessibility
+- Customizable: Easily styled and themed to fit your application's design
+- Reusable: Modular and composable components for efficient development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ShadCN aims to simplify the process of building React applications by providing a robust set of UI components, allowing developers to focus on the logic and functionality of their application.
+  ( Meta AI )
 
-## Expanding the ESLint configuration
+# Context
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    This Assignment makes use of tailwindcss along with ShadCN to create stylized components with the Shale color scheme in ShadCN. I personally messed around with the way the left navigational bar worked, also known as a dropdown menu, and changed a few of the icons along with adding the Binary section. That makes use of the lucide-React library to create those small icons we see to the left.
