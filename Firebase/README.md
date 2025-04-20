@@ -1,54 +1,17 @@
-# React + TypeScript + Vite
+## Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Google Firebase is a Backend-as-a-Service (BaaS) platform that provides a suite of tools and services to build, manage, and scale web and mobile applications. It offers a range of features, including:
 
-Currently, two official plugins are available:
+- Authentication: User authentication and authorization
+- Realtime Database: NoSQL database for storing and syncing data in real-time
+- Cloud Firestore: NoSQL document database for storing and querying data
+- Cloud Storage: Object storage for files and media
+- Cloud Functions: Serverless functions for backend logic
+- Hosting: Web hosting and deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Firebase simplifies the development process by providing a managed backend infrastructure, allowing developers to focus on building their application's frontend and business logic. It's particularly well-suited for rapid prototyping, small to medium-sized applications, and applications that require real-time data synchronization.
+  ( Meta AI)
 
-## Expanding the ESLint configuration
+# Context
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    This assignment made use of Cursor and Firebase to create an interactable sign in platform using Googles backend to store logins in the cloud and allow for secure connection through firebases authentication. ( This is one of the cooler websites in the portfolio, just because it actually has a backend)
